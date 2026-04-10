@@ -181,10 +181,10 @@ const Loading = ({ onComplete }) => {
         ref={screenRef}
         className="w-[820px] h-[500px] px-10 py-10 border border-zinc-900 relative bg-black overflow-hidden will-change-transform"
       >
-        <span className="absolute -top-px -left-px w-4 h-4 border-t border-l border-orange-500" />
-        <span className="absolute -top-px -right-px w-4 h-4 border-t border-r border-orange-500" />
-        <span className="absolute -bottom-px -left-px w-4 h-4 border-b border-l border-orange-500" />
-        <span className="absolute -bottom-px -right-px w-4 h-4 border-b border-r border-orange-500" />
+        <span className="absolute top-0 left-0 w-4 h-4 border-t border-l border-orange-500" />
+        <span className="absolute top-0 right-0 w-4 h-4 border-t border-r border-orange-500" />
+        <span className="absolute bottom-0 left-0 w-4 h-4 border-b border-l border-orange-500" />
+        <span className="absolute bottom-0 right-0 w-4 h-4 border-b border-r border-orange-500" />
 
         <div className="flex justify-between font-mono text-[9px] tracking-[4px] text-zinc-700 mb-6">
           <span>TERMINAL_v3.0</span>
