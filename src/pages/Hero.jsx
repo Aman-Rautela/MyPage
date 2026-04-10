@@ -11,15 +11,6 @@ const SLIDES = [
     type: "svg",
     content: (
       <svg viewBox="0 0 100 100" width="160" height="160" fill="none">
-        <circle cx="50" cy="50" r="30" stroke="white" strokeWidth="1.5" />
-        <circle cx="50" cy="50" r="4" fill="white" />
-      </svg>
-    ),
-  },
-  {
-    type: "svg",
-    content: (
-      <svg viewBox="0 0 100 100" width="160" height="160" fill="none">
         <circle cx="50" cy="50" r="30" stroke="white" strokeWidth="1.5"/>
         <circle cx="50" cy="50" r="4" fill="white"/>
         <line x1="50" y1="5" x2="50" y2="25" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
@@ -29,7 +20,17 @@ const SLIDES = [
         <circle cx="50" cy="50" r="44" stroke="white" strokeWidth="0.5" strokeDasharray="4 6"/>
       </svg>
     ),
-  },
+  },{
+  type: "svg",
+  content: (
+    <svg viewBox="0 0 200 100" width="300" height="150" fill="none">
+      <path d="M60 10 L30 10 L30 90 L60 90" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+      <path d="M140 10 L170 10 L170 90 L140 90" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+      <path d="M85 35 L100 50 L85 65" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+      <path d="M115 35 L100 50 L115 65" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    </svg>
+  ),
+},
 ];
 
 export default function Hero() {
@@ -164,7 +165,7 @@ export default function Hero() {
                 idxRef.current = (idxRef.current + 1) % SLIDES.length;
                 tick();
               });
-            }, 1000);
+            }, 50);
           });
         });
       });
