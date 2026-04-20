@@ -24,7 +24,7 @@ const App = () => {
     <div style={{ background: "#080808", position: "relative" }}>
 
       <Hero />
-      <div
+      {/* <div
         ref={loaderRef}
         style={{
           position: "fixed",
@@ -34,7 +34,7 @@ const App = () => {
         }}
       >
         <Loading onComplete={() => setLoaderDone(true)} />
-      </div>
+      </div> */}
 
     </div>
   )
